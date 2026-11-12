@@ -349,6 +349,171 @@ tbody td .actions a.btn-danger:hover { color: #fff; }
   font-style: italic;
 }
 
+/* ---------- Formulários ---------- */
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=number],
+select,
+textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 13px;
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border 0.15s, box-shadow 0.15s;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text3);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+select option {
+  background: var(--surface);
+}
+
+.field-value {
+  padding: 10px 13px;
+  border-radius: 10px;
+  background: var(--surface2);
+  font-size: 14px;
+  min-height: 40px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  justify-content: flex-end;
+}
+
+.cid-dropdown {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.cid-dropdown summary {
+  padding: 11px 13px;
+  font-size: 14px;
+  color: var(--text);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cid-dropdown summary::before {
+  content: '+';
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  transition: transform 0.2s;
+}
+
+.cid-dropdown[open] summary::before {
+  transform: rotate(45deg);
+}
+
+.cid-list {
+  padding: 8px 13px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+}
+
+.cid-list label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.cid-list input[type=checkbox] {
+  width: auto;
+  accent-color: var(--accent);
+}
+
+.errorlist {
+  list-style: none;
+  color: var(--danger);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.section-title::before {
+  content: '';
+  width: 4px;
+  height: 16px;
+  border-radius: 2px;
+  background: var(--coral);
+}
+
 /* ---------- Rodapé ---------- */
 .footer {
   max-width: 1240px;
