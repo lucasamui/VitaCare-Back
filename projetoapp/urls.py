@@ -9,5 +9,6 @@ urlpatterns = [
     path('cids/', include('cids.urls', namespace='cids')),
     path('medications/', include('medications.urls', namespace='medications')),
     path('historicos/', include('medicalhistories.urls', namespace='medicalhistories')),
+    path('pacientes/', include('patients.urls', namespace='patients')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
