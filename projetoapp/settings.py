@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'persons.apps.PersonsConfig',
     'cids.apps.CidsConfig',
     'medications.apps.MedicationsConfig',
+    'medicalhistories.apps.MedicalhistoriesConfig',
 ]
 
 MIDDLEWARE = [
