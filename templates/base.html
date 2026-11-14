@@ -24,6 +24,7 @@
       <nav class="nav">
         <a href="{% url 'cids:list_cids' %}" class="nav-item {% if request.path|slice:':6' == '/cids/' %}active{% endif %}">CIDs</a>
         <a href="{% url 'medications:list_medications' %}" class="nav-item {% if request.path|slice:':13' == '/medications/' %}active{% endif %}">Medicamentos</a>
+        <a href="{% url 'medicalhistories:list_medicalhistories' %}" class="nav-item {% if request.path|slice:':12' == '/historicos/' %}active{% endif %}">Históricos</a>
       </nav>
     </div>
   </header>
