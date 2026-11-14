@@ -23,6 +23,7 @@
 
       <nav class="nav">
         <a href="{% url 'cids:list_cids' %}" class="nav-item {% if request.path|slice:':6' == '/cids/' %}active{% endif %}">CIDs</a>
+        <a href="{% url 'medications:list_medications' %}" class="nav-item {% if request.path|slice:':13' == '/medications/' %}active{% endif %}">Medicamentos</a>
       </nav>
     </div>
   </header>
