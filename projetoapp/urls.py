@@ -13,5 +13,6 @@ urlpatterns = [
     path('medicos/', include('doctors.urls', namespace='doctors')),
     path('consultas/', include('consults.urls', namespace='consults')),
     path('exames/', include('exams.urls', namespace='exams')),
+    path('receitas/', include('prescriptions.urls', namespace='prescriptions')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
