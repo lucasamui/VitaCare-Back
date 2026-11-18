@@ -12,5 +12,6 @@ urlpatterns = [
     path('pacientes/', include('patients.urls', namespace='patients')),
     path('medicos/', include('doctors.urls', namespace='doctors')),
     path('consultas/', include('consults.urls', namespace='consults')),
+    path('exames/', include('exams.urls', namespace='exams')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
