@@ -9,7 +9,25 @@
 <div class="page-header">
   <div>
     <h1>Olá! Bem-vindo(a) ao VitaCare</h1>
-    <div class="subtitle">Escolha um módulo no menu acima</div>
+    <div class="subtitle">Escolha um módulo no menu acima ou use os atalhos abaixo</div>
+  </div>
+</div>
+
+<div class="form-card">
+  <p class="section-title">Atendimento</p>
+  <div class="actions" style="flex-wrap:wrap">
+    <a href="{% url 'consults:add_consult' %}" class="btn btn-primary">Nova consulta</a>
+    <a href="{% url 'exams:add_exam' %}" class="btn btn-ghost">Novo exame</a>
+    <a href="{% url 'prescriptions:add_prescription' %}" class="btn btn-ghost">Nova receita</a>
+  </div>
+
+  <p class="section-title" style="margin-top:28px">Cadastros</p>
+  <div class="actions" style="flex-wrap:wrap">
+    <a href="{% url 'patients:list_patients' %}" class="btn btn-ghost">Pacientes</a>
+    <a href="{% url 'doctors:list_doctors' %}" class="btn btn-ghost">Médicos</a>
+    <a href="{% url 'cids:list_cids' %}" class="btn btn-ghost">CIDs</a>
+    <a href="{% url 'medications:list_medications' %}" class="btn btn-ghost">Medicamentos</a>
+    <a href="{% url 'medicalhistories:list_medicalhistories' %}" class="btn btn-ghost">Históricos</a>
   </div>
 </div>
 
